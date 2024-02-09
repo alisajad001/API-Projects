@@ -1,8 +1,53 @@
-@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,700");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+header {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-bottom: 5px solid #0059ff;
+}
+
+header h1 {
+  font-weight: 500;
+  color: #0059ff;
+}
+
+header p {
+  color: #3d3d3d;
+}
+
+.form {
+  margin-top: 2em;
+  max-width: 500px;
+  display: flex;
+  width: 90%;
+}
+
+.form input {
+  padding: 1em;
+  font-size: 1rem;
+  outline: 0;
+  border: 0;
+  background: #dbdbdb;
+  width: 100%;
+}
+
+.form button {
+  padding: 1em;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #0059ff;
+  border: 0;
+  color: white;
+  cursor: pointer;
 }
