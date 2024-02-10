@@ -25,14 +25,17 @@ const fetchUniversities = async (userValue) => {
 
     // Creates a university item from universites array
     universities.forEach((university, index) => {
-      index++;
       const listItem = document.createElement("li");
       const linkItem = document.createElement("a");
       const idItem = document.createElement("span");
+      index++;
       idItem.innerText = `#${index}`;
       linkItem.innerText = university.name;
       linkItem.href = university.web_pages[0];
       linkItem.setAttribute("target", "_blank");
+
+      // Sort universities alphabetically
+      universities.sort((a, b) => a.name.localeCompare(b.name));
 
       listItem.append(linkItem, idItem);
       universitiesList.appendChild(listItem);
