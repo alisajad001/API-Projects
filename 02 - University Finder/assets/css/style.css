@@ -21,7 +21,7 @@
 }
 
 header {
-  padding: 3em 0;
+  padding: 3em 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@ header p {
   margin-top: 2em;
   max-width: 500px;
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 
 .form input {
@@ -70,7 +70,6 @@ header p {
   width: 90%;
   height: 400px;
   margin: 1em auto;
-  padding: 1em;
   overflow-y: scroll;
 }
 
@@ -79,7 +78,7 @@ header p {
 }
 
 .results .universities {
-  margin: 2em 2em;
+  margin: 2em 1em;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -106,4 +105,31 @@ header p {
 
 .universities li a:hover {
   color: #0059ff;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    align-items: start;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .universities li {
+    padding-right: 1em;
+  }
+
+  .universities li span {
+    font-size: 0.7em;
+  }
+
+  .universities li a {
+    font-size: 0.9em;
+    padding-left: 1em;
+  }
 }
