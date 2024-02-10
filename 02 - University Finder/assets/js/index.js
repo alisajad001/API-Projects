@@ -12,36 +12,43 @@ const universitiesList = document.querySelector(".universities");
 let universities;
 
 const fetchUniversities = async (userValue) => {
-  resultCounter.innerText = "Loading...";
   universitiesList.innerHTML = "";
-  try {
-    const result = await fetch(
-      `http://universities.hipolabs.com/search?country=${userValue}`,
-    );
-    const data = await result.json();
-    console.log(data);
-    universities = data;
-    resultCounter.innerHTML = `Results ${universities.length}`;
 
-    // Creates a university item from universites array
-    universities.forEach((university, index) => {
-      const listItem = document.createElement("li");
-      const linkItem = document.createElement("a");
-      const idItem = document.createElement("span");
-      index++;
-      idItem.innerText = `#${index}`;
-      linkItem.innerText = university.name;
-      linkItem.href = university.web_pages[0];
-      linkItem.setAttribute("target", "_blank");
+  resultCounter.innerText = "Searching...";
+  if (userInput.value === "") {
+    resultCounter.innerText = "Please enter a country";
+    resultCounter.style.color = "red";
+  } else {
+    try {
+      const result = await fetch(
+        `http://universities.hipolabs.com/search?country=${userValue}`,
+      );
+      const data = await result.json();
+      console.log(data);
+      universities = data;
+      resultCounter.innerHTML = `Results ${universities.length}`;
+      resultCounter.style.color = "#232323";
 
-      // Sort universities alphabetically
-      universities.sort((a, b) => a.name.localeCompare(b.name));
+      // Creates a university item from universites array
+      universities.forEach((university, index) => {
+        const listItem = document.createElement("li");
+        const linkItem = document.createElement("a");
+        const idItem = document.createElement("span");
+        index++;
+        idItem.innerText = `#${index}`;
+        linkItem.innerText = university.name;
+        linkItem.href = university.web_pages[0];
+        linkItem.setAttribute("target", "_blank");
 
-      listItem.append(linkItem, idItem);
-      universitiesList.appendChild(listItem);
-    });
-  } catch (error) {
-    resultCounter.innerText = "Error: " + error;
+        // Sort universities alphabetically
+        universities.sort((a, b) => a.name.localeCompare(b.name));
+
+        listItem.append(linkItem, idItem);
+        universitiesList.appendChild(listItem);
+      });
+    } catch (error) {
+      resultCounter.innerText = "Error: " + error;
+    }
   }
 };
 
