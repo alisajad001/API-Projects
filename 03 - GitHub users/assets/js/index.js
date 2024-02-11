@@ -21,6 +21,14 @@ const fetchUserData = async () => {
   } else {
     try {
       const response = await fetch(URL + usernameValue);
+
+      if (response.status === 404) {
+        // Handle the case where the username is not found
+        alert("Username not found");
+        userInput.value = "";
+        return;
+      }
+
       const data = await response.json();
 
       renderUser(data);
