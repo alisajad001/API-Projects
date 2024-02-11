@@ -63,3 +63,24 @@ body {
   font-size: 0.8rem;
   color: #505050;
 }
+
+/* Body */
+.github-user-card__body {
+  margin-top: 1em;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.user-bio {
+  margin-top: 0.3em;
+  color: #505050;
+  font-size: 0.9rem;
+}
+
+.user-location {
+  margin-top: 0.5em;
+}
