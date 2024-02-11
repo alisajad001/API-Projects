@@ -17,12 +17,49 @@ body {
 .github-user-card {
   max-width: 350px;
   width: 100%;
-  background-color: rgb(109, 109, 109);
   margin: auto;
   padding: 1em;
   border-radius: 0.3em;
+  border: 1px solid #eee;
+  box-shadow: 0 0 90px #cfcfcfc9;
+}
+
+.github-user-card__username {
+  color: #505050;
+  font-size: 0.8rem;
 }
 
 .flex {
   display: flex;
+}
+
+/* Header */
+.github-user-card__header {
+  margin-top: 0.7em;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.github-user-card__header img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #b1b1b1c9;
+  padding: 0.2em;
+  border-radius: 50%;
+}
+
+.header-content {
+  gap: 1em;
+}
+
+.header-content__text h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #1a1a1a;
+}
+
+.header-content__text span {
+  font-size: 0.8rem;
+  color: #505050;
 }
