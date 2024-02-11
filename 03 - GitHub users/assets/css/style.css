@@ -14,7 +14,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #cfcfcfc9;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: #505050;
 }
 
 /* Input */
@@ -148,7 +157,7 @@ body {
 
 .github-user-card__repos ul {
   overflow-y: scroll;
-  height: 170px;
+  height: 190px;
   margin-top: 1em;
 }
 
