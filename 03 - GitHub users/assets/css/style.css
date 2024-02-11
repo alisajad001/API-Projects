@@ -7,3 +7,22 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+/* Layout */
+.github-user-card {
+  max-width: 350px;
+  width: 100%;
+  background-color: rgb(109, 109, 109);
+  margin: auto;
+  padding: 1em;
+  border-radius: 0.3em;
+}
+
+.flex {
+  display: flex;
+}
