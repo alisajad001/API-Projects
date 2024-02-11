@@ -1,5 +1,5 @@
 /* Google font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -13,9 +13,16 @@ body {
   height: 100vh;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 /* Layout */
 .github-user-card {
   max-width: 350px;
+  height: 100vh;
+  max-height: 500px;
+  overflow: hidden;
   width: 100%;
   margin: auto;
   padding: 1em;
@@ -79,8 +86,55 @@ body {
   margin-top: 0.3em;
   color: #505050;
   font-size: 0.9rem;
+  margin-bottom: 1em;
 }
 
-.user-location {
+.user-location,
+.user-stars {
+  font-size: 0.9rem;
+  color: #505050;
+}
+
+/* Repositories */
+.github-user-card__repos {
+  border-top: 1px solid #cfcfcfc9;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.github-user-card__repos h2 {
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+
+.github-user-card__repos ul {
+  overflow-y: scroll;
+  height: 170px;
+  margin-top: 1em;
+}
+
+.github-user-card__repos ul li {
+  background-color: #ececec;
+  border-radius: 0.5em;
   margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.github-user-card__repos ul li span {
+  font-size: 0.8rem;
+  color: #505050;
+}
+
+.github-user-card__repos ul li a {
+  padding: 1em;
+  text-decoration: none;
+  font-weight: 500;
+  color: #505050;
+  transition: 0.3s;
+}
+
+.github-user-card__repos ul li a:hover {
+  transform: translateX(5px);
 }
