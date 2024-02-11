@@ -17,6 +17,44 @@ body {
   width: 10px;
 }
 
+/* Input */
+.user-input {
+  margin: auto;
+  max-width: 500px;
+  width: 90%;
+  background-color: #dfdfdf;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+}
+
+.user-input h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.user-input input {
+  width: 100%;
+  padding: 1em;
+  border: 0;
+  border-radius: 0.5em 0 0 0.5em;
+  outline: 0;
+  font-size: 1rem;
+}
+
+.user-input #find-btn {
+  padding: 1em;
+  border: 0;
+  border-radius: 0 0.5em 0.5em 0;
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#user-input #find-btn:hover {
+  opacity: 0.8;
+}
+
 /* Layout */
 .github-user-card {
   max-width: 350px;
@@ -29,6 +67,7 @@ body {
   border-radius: 0.3em;
   border: 1px solid #eee;
   box-shadow: 0 0 90px #cfcfcfc9;
+  display: none;
 }
 
 .github-user-card__username {

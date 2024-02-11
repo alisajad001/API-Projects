@@ -9,27 +9,35 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <div class="user-input">
+      <h3>Search for a GitHub user</h3>
+
+      <div class="flex">
+        <input type="text" placeholder="User name..." id="user-input" />
+        <button id="find-btn">Find</button>
+      </div>
+    </div>
+
     <div class="github-user-card">
-      <span class="github-user-card__username">alisajad001</span>
+      <span class="github-user-card__username" id="username">alisajad001</span>
       <header class="github-user-card__header flex">
         <img
           src="https://avatars.githubusercontent.com/u/126584124?v=4"
-          alt=""
-          width="50"
+          id="user-image"
         />
 
         <!-- Card Header Start -->
         <section class="header-content flex">
           <div class="header-content__text">
-            <h3>12</h3>
+            <h3 id="followers">12</h3>
             <span>Followers</span>
           </div>
           <div class="header-content__text">
-            <h3>45</h3>
+            <h3 id="repos">45</h3>
             <span>Repos</span>
           </div>
           <div class="header-content__text">
-            <h3>12</h3>
+            <h3 id="following">12</h3>
             <span>Following</span>
           </div>
         </section>
@@ -51,7 +59,7 @@
       <section class="github-user-card__repos">
         <h2>Repositories</h2>
 
-        <ul>
+        <ul id="repos-list">
           <li>
             <span>01</span>
             <a href="#">30-days-js</a>
