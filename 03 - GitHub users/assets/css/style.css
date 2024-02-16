@@ -31,14 +31,19 @@ body {
   margin: auto;
   max-width: 500px;
   width: 90%;
-  background-color: #dfdfdf;
-  padding: 2em 3em;
+  padding: 2em;
+  background: linear-gradient(90deg, #dee4ec, #eeeeee00);
   border-radius: 0.5em;
+  box-shadow: 5px 5px 0 #75729628;
 }
 
 .user-input h3 {
   font-size: 1.5rem;
-  margin-bottom: 1em;
+}
+
+.user-input p {
+  margin: 0.4em 0 1em 0;
+  opacity: 0.5;
 }
 
 .user-input input {
