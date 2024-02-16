@@ -162,8 +162,7 @@ body {
 
 .github-user-card__repos ul {
   overflow-y: scroll;
-  height: 190px;
-  margin-top: 1em;
+  height: 160px;
 }
 
 .github-user-card__repos ul li {
