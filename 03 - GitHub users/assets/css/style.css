@@ -11,6 +11,7 @@
 body {
   display: flex;
   height: 100vh;
+  background-color: #e8faff;
 }
 
 ::-webkit-scrollbar {
@@ -78,9 +79,17 @@ body {
   width: 100%;
   margin: auto;
   padding: 1em;
-  border-radius: 0.3em;
-  border: 1px solid #eee;
-  box-shadow: 0 0 90px #cfcfcfc9;
+  border-radius: 1.5em;
+  border: 2px solid #eee;
+  box-shadow: 0 1em 4em #31383f5e;
+  background: linear-gradient(
+    to bottom right,
+    #dbe0e7,
+    #dfc9b5b9,
+    #e8ccf8,
+    #bed5f3,
+    #e1fffb
+  );
   display: none;
 }
 
@@ -121,7 +130,7 @@ body {
 
 .header-content__text span {
   font-size: 0.8rem;
-  color: #505050;
+  color: #5050508a;
 }
 
 /* Body */
@@ -137,7 +146,7 @@ body {
 
 .user-bio {
   margin-top: 0.3em;
-  color: #505050;
+  color: #505050c2;
   font-size: 0.9rem;
   margin-bottom: 1em;
 }
@@ -150,7 +159,7 @@ body {
 
 /* Repositories */
 .github-user-card__repos {
-  border-top: 1px solid #cfcfcfc9;
+  border-top: 1px solid #ffffff27;
   margin-top: 1em;
   padding-top: 1em;
 }
@@ -166,12 +175,16 @@ body {
 }
 
 .github-user-card__repos ul li {
-  background-color: #ececec;
+  background: linear-gradient(90deg, #dee4ec, #eeeeee2d);
   border-radius: 0.5em;
   margin-top: 0.5em;
   display: flex;
   align-items: center;
   padding-left: 1rem;
+}
+
+.github-user-card__repos ul li:hover {
+  background-color: #dee4ec;
 }
 
 .github-user-card__repos ul li span {
