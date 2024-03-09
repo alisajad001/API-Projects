@@ -46,3 +46,38 @@
   max-width: 600px;
   width: calc(75vw - 4em);
 }
+
+/* Pokemon Container */
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.pokemon {
+  border: 1px solid #ccc;
+  background: linear-gradient(
+    #f7f7f7 0%,
+    #f7f7f7 50%,
+    #e1e1e1 50%,
+    #e1e1e1 100%
+  );
+  border-radius: 0.5em;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon h2 {
+  text-transform: capitalize;
+  font-size: 1em;
+}
