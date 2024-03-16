@@ -4,3 +4,5 @@
 - 02 - University Finder API
 - 03 - Github users API
 - 04 - Pokemon App API
+
+Designed and coded by Ali Sajad Ahmadi
